@@ -1,12 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Parent } from './props/Parent';
+import GuestList from './state/GuestList';
 
 function App() {
   return (
     <>
-      <Parent />
+      {/* <Parent /> */}
+      <GuestList />
     </>
   );
 }
