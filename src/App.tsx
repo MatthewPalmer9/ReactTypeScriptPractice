@@ -1,7 +1,7 @@
 import './App.css';
 import { Parent } from './props/Parent';
 import GuestList from './state/GuestList';
-import UserSearch from './state/UserSearch';
+import UserSearch from './refs/UserSearch';
 
 function App() {
   return (
