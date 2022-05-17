@@ -1,5 +1,10 @@
 import { useState } from 'react';
 
+interface User  {
+    name: string,
+    age: number
+}
+
 const users = [
     { name: 'Sarah', age: 20 },
     { name: 'Alex', age: 24 },
@@ -8,7 +13,7 @@ const users = [
 
 const UserSearch: React.FC = () => {
     const [name, setName] = useState<string>('');
-    const [user, setUser] = useState<{ name: string, age: number } | undefined>();
+    const [user, setUser] = useState<User | undefined>();
 
     const onClick = () => {
         const foundUser = users.find((user) => {
